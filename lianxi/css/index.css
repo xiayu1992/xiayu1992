@@ -1,0 +1,92 @@
+#header .zt {
+    border: 2px dashed #000;
+    width: 120px;
+    text-align: center;
+    margin: 0 auto;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    font-size: 50px;
+    color: #ffffff;
+}
+#mainpic img{
+    width: 1230px;
+}
+#mainpic{
+    position: relative;
+}
+#header .wrapper {
+    background: #D50100;
+}
+#lb{
+    height: 46px;
+}
+#mdi-vdiv{
+    position: absolute;
+    top:400px;
+    height: 46px;
+    width: 1230px;
+    background: #D50100;
+
+    box-shadow: 0 10px 10px 1px rgb(255,0,0);
+    margin: 0px;
+}
+#mul{
+    margin-left: 300px;
+}
+
+#mdi-vdiv #mul .abc{
+    font-size: 30px;
+    float: left;
+    margin-left: 60px;
+    /*text-align: center;*/
+    /*display: block;*/
+
+}
+#mli::after{
+    position: absolute;
+    cursor:pointer;
+    top:5px;
+    left:410px;
+    display: block;
+    content: '';
+    width: 0px;
+    height: 0px;
+    border-width:10px;
+    border-style:solid;
+    border-color:   transparent transparent #000000 transparent;
+}
+
+#mul .abc:hover::after{
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+    transform-origin:10px 15px;
+}
+#mul a{
+    color: #ffffff;
+}
+#mul .abc:hover >a{
+    color: #000000;
+}
+#mul .small-mul{
+    position: absolute;
+    background: #00ff00;
+    width: 100px;
+    display: none;
+
+}
+#mul .abc:hover .small-mul{
+    display: inline;
+}
+
+#mul .small-li >a{
+    display: block;
+}
+#mul .small-mul .small-li:hover a{
+    color:#000;
+    background: #ffff00;
+    cursor:pointer;
+}
