@@ -56,14 +56,17 @@
     border-style:solid;
     border-color:   transparent transparent #000000 transparent;
 }
-
+/*abc是一级列表第一个选项*/
 #mul .abc:hover::after{
+    /*三角号翻转*/
     -webkit-transform: rotate(180deg);
     -moz-transform: rotate(180deg);
     -ms-transform: rotate(180deg);
     -o-transform: rotate(180deg);
     transform: rotate(180deg);
     transform-origin:10px 15px;
+    /*过渡属性：匀速线性*/
+    transition: transform 1S linear;
 }
 #mul a{
     color: #ffffff;
@@ -80,6 +83,7 @@
 }
 #mul .abc:hover .small-mul{
     display: inline;
+    z-index: 1;
 }
 
 #mul .small-li >a{
@@ -89,4 +93,56 @@
     color:#000;
     background: #ffff00;
     cursor:pointer;
+}
+#ss{
+    height: 150px;
+
+    margin-top: 8px;
+    position: relative;
+
+}
+#ss .sousuo{
+    height: 150px;
+    background: #FF7171;
+}
+#ss #usrname-button{
+    border: 2px solid #ffff00;
+    background: #ff0000;
+    color: #ffff00;
+    font-size: 40px;
+    margin-left: 300px;
+}
+#ss #usrname{
+    /*搜索框背景颜色*/
+    position: absolute;
+    top:2px;
+    background: #ffffff;
+    font-size: 30px;
+    height: 40px;
+    width: 500px;
+}
+#ss #passworld-button{
+    border: 2px solid #ffff00;
+    background: #ff0000;
+    color: #ffff00;
+    font-size: 40px;
+    margin-left: 300px;
+}
+#ss #pw{
+    /*搜索框背景颜色*/
+    margin-left: 8px;
+    position: absolute;
+    top:47px;
+    background: #ffffff;
+    font-size: 30px;
+    height: 40px;
+    width: 500px;
+}
+#ss .tubiao{
+    /*margin: 0 auto;*/
+    text-align: center;
+}
+#ss .iconfont{
+    color:#000;
+    font-size: 40px;
 }
